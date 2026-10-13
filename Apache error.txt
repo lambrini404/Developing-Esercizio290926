@@ -1,0 +1,17 @@
+Prima ricerca: xampp apache error port already in use
+
+Fonti:
+1) https://stackoverflow.com/questions/23317372/xampp-port-80-in-use-by-unable-to-open-process-with-pid-4 7/10
+
+Set Apache to listen on a different port. This can be done by clicking on the "Config" button on the same line as the "Apache" module, select the "httpd.conf" file in the dropdown, then change the "Listen 80" line to "Listen 8080". Save the file and close it.
+
+2) https://medium.com/@andrewsuryadarmahendry02/port-80-in-use-by-unable-to-open-process-with-pid-4-xampp-ffd3eb54f4ee 6/10 (aveva la no1 come fonte)
+a. Go to the config and open Apache (httpd. conf)
+b. Change the port number from 80 -> 8080 (or anything you want, except reversed port number).
+c. In the same file, change the port number to the port number you chose before
+d. Open XAMPP Config, change Main & SSL port
+
+3) https://serverfault.com/questions/366180/apache-xampp-cannot-start-port-80-busy 3/10
+
+In VMware go: Edit < Preferences < Shared VMs and Disable Sharing (or change the ports if you need the functionality)
+/ change the port in httpd.conf 
